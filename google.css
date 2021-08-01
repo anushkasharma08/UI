@@ -1,0 +1,220 @@
+/* Basic Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  header {
+    width: 100%;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* Nav-Bar */
+  #Nbar {
+    float: right;
+  }
+  
+  #Nbar li {
+    display: inline-block;
+    padding: 8px;
+  }
+  
+  #Nbar #signIn {
+    background: #4887ef; 
+    margin-right: 25px;
+    padding: 7px 15px;
+    border-radius: 3px; 
+    font-weight: bold;
+  }
+  
+  .Nlinks {
+    color: #404040;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  li.Nlinks a:hover {
+    text-decoration: underline;
+  }
+  
+  #signIn:hover { 
+    box-shadow: 1px 1px 5px #999;
+  }
+  
+  #signIn {
+    color: #fff;
+  }
+  
+  /* Google Search Area */
+  .Image #googleLogo {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+    padding-top: 112px;
+    padding-bottom: 20px;
+  }
+  
+  .form {
+    text-align: center;
+  }
+  
+  #searchForm { 
+    width: 500px;
+    line-height: 35px;
+    padding: 20px 10px;
+    border-radius: 20px;
+  }
+  #searchForm:hover {
+  border-color: #070101;
+  padding-top: 0;
+}
+  
+  .form #searchForm {
+    padding: 0 8px;
+  }
+ 
+  
+  .buttons {
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 300px;
+  }
+  #langLink a{
+    color: #1a0dab;
+     }
+  #langLink a:hover{
+    text-decoration: underline;
+  }
+  
+  /* FOOTER */
+  footer  {
+    background: #f2f2f2;
+    border-top: solid 2px #e4e4e4;
+  
+    bottom: o;
+    padding-bottom: 0;
+    width: 100%;
+    
+  }
+  
+  footer ul li {
+    display: inline;
+    color: #666666;
+    font-size: 14px;
+    padding: 13px;
+  }
+  
+  footer ul {
+    float: left;
+    padding: 1px;
+  }
+  
+  footer ul a:hover {
+    text-decoration: underline;
+  }
+  
+  .footerRight {
+    float: right;
+  }
+  
+  /* Media Queries */
+  
+  @media screen and (max-width: 400px) {
+   
+   li.Nlinks a {
+      display: none;
+    }
+    
+   #googleLogo {
+     padding: 0;
+   }
+    
+   .buttons {
+     display: none;
+   }
+    
+   #searchForm {
+     width: 80%;
+  
+   }
+    
+   footer {
+     bottom: 0;
+   }
+    
+   footer ul {
+     float: none;
+     padding-bottom: 2px;
+      
+   }
+    
+   .footerLeft {
+     text-align: center;
+     margin: auto; 
+     padding-top: 10px;
+      
+   }
+    
+   .footerRight {
+     float: none;
+     text-align: center;
+     
+   }
+  }
+  
+  @media screen and (max-width: 500px) {
+   
+    li.Nlinks a {
+      display: none;
+    }
+    
+    
+   #googleLogo {
+     padding: 0;
+   }
+    
+   .buttons {
+     display: none;
+   }
+    
+   #searchForm {
+     width: 80%;
+  
+   }
+    
+   footer {
+  /*    bottom: 0;
+     postion: absolute; */
+     position:absolute;
+     bottom: 0px;
+     width:100%;
+     height:60px;
+   }
+    
+   footer ul {
+     float: none;
+     padding-bottom: 2px;
+      
+   }
+    
+   .footerLeft {
+     text-align: center;
+     margin: auto; 
+     padding-top: 10px;
+      
+   }
+    
+   .footerRight {
+     float: none;
+     text-align: center;
+     
+   }
+  }
